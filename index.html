@@ -42,7 +42,6 @@
 		<imagetarget id='QR_주먹도끼' src='targets/QR_주먹도끼.png'></imagetarget>
 		<imagetarget id='QR_찍개' src='targets/QR_찍개.png'></imagetarget>
 		<imagetarget id='QR_밀개(실사)' src='targets/QR_밀개(실사).png'></imagetarget>
-<<<<<<< HEAD
 		<imagetarget id='1' src='targets/1.png'></imagetarget>
 		<imagetarget id='2' src='targets/2.png'></imagetarget>
 		<imagetarget id='3' src='targets/3.png'></imagetarget>
@@ -55,21 +54,13 @@
 		<imagetarget id='10' src='targets/10.png'></imagetarget>
 		<imagetarget id='11' src='targets/11.png'></imagetarget>
 		<imagetarget id='12' src='targets/12.png'></imagetarget>
-=======
-		<imagetarget id='total' src='targets/total.jpg'></imagetarget>
-		<imagetarget id='hello' src='targets/hello.jpg'></imagetarget>
-		<imagetarget id='hello_plane' src='targets/hello_plane.jpg'></imagetarget>
-		<imagetarget id='hello_plane2' src='targets/hello_plane2.jpg'></imagetarget>
-		<imagetarget id='hello_stand' src='targets/hello_stand.jpg'></imagetarget>
-		<imagetarget id='hello_part' src='targets/hello_part.png'></imagetarget>
->>>>>>> 0bc52dcaac7783639804345265c2074e12b60a94
 
     <video id="webcam-video" muted autoplay playsinline style="width:1px;position:absolute"></video>
     <canvas id="video-canvas" style="width:100%; height:100%; object-fit:cover; position:absolute"></canvas>
     <div id="startARDiv" class="ctaDiv">
         <select id="chooseCamSel" style="display: none;" onchange="SelectCam()"></select>
-        <p style="text-align: center; width:60vw;">카메라 접근 권한을 허용해주세요 ! </p>
-        <button id="startARButton" onclick="StartAR()" style="display:none">접근 허용</button>
+        <p style="text-align: center; width:60vw;">This augmented reality experience requires access to your device's camera</p>
+        <button id="startARButton" onclick="StartAR()" style="display:none">ALLOW ACCESS</button>
     </div>
     <div id="screenshotDiv" style="display: none;" class="ctaDiv">
         <div style="position:relative; background-color:white; padding:10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);">
@@ -101,11 +92,7 @@
     </div>
     <script src="arcamera.js" type="text/javascript"></script>
     <script src="itracker.js" type="text/javascript"></script>
-<<<<<<< HEAD
     <script src="Build/WebAR_Final.loader.js"></script>
-=======
-    <script src="Build/webAR.loader.js"></script>
->>>>>>> 0bc52dcaac7783639804345265c2074e12b60a94
     <script>
             var initialize = async() =>{
                 var unityCanvas = document.querySelector("#unity-canvas");
@@ -137,15 +124,9 @@
                 
                 document.getElementById("startARDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-<<<<<<< HEAD
                     dataUrl: "Build/WebAR_Final.data",
                     frameworkUrl: "Build/WebAR_Final.framework.js",
                     codeUrl: "Build/WebAR_Final.wasm",
-=======
-                    dataUrl: "Build/webAR.data",
-                    frameworkUrl: "Build/webAR.framework.js",
-                    codeUrl: "Build/webAR.wasm",
->>>>>>> 0bc52dcaac7783639804345265c2074e12b60a94
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
                     productName: "WebAR_final",
